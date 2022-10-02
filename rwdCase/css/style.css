@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&display=swap');
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+
+body {
+  background-color: #242582;
+}
+
+.menu {
+  float: left;
+  width: 20%;
+
+}
+
+h1 {
+  color: white;
+  
+  
+}
+
+
+.menuitem {
+  padding: 8px;
+  margin-top: 7px;
+  display: block;
+  background-color: #2F2FA2;
+  text-align: center;
+  color: white;
+  border-radius: 2px;
+  
+}
+
+
+.menuitem:last-child {
+    border-bottom: none;
+  }
+
+.menuitem :hover {
+  transition: ease-in 400ms;
+  background-color: #242582;
+  border-radius: 8px;
+}
+
+a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 8px 16px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px black;
+  }
+
+.main {
+  float: left;
+  width: 60%;
+  padding: 0 20px;
+  overflow: hidden;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h2 {
+  color: white;
+  align-self: center;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.right p {
+  font-size: 15px;
+}
+
+.right {
+  background-color: rgba(53, 53, 251, 0.527);
+  float: left;
+  width: 20%;
+  padding: 10px 15px;
+  margin-top: 7px;
+  padding-bottom: 90px;
+  border-radius: 4px;
+  
+}
+
+
+.wrapper {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/*  Text styling   */
+
+.header h3 {
+  font-weight: 300;
+  color: white;
+}
+
+
+img {
+  border-radius: 2px;
+  
+  
+}
+
+.img-wrapper {
+  width: 70%;
+}
+
+
+
+.footer {
+  border-radius: 5px;
+  color: white;
+  font-weight: 100;
+  text-shadow:1px 1px 70px 20px rgba(255, 255, 255, 0.21);
+  position: fixed;
+  width: 90%;
+  margin: 0px;
+  left: 80px;
+  bottom: 16px;
+  
+}
+
+
+
+
+
+@media only screen and (max-width:880px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+
+  .footer {
+    display: none;
+  }
+
+
+  .wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width:640px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
+  .wrapper {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .footer {
+    display: none;
+  }
+
+}
+
+
